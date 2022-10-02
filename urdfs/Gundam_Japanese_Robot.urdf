@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<robot name="GUNDAM KALEIDO"
+       xmlns:xi="http://www.w3.org/2001/XInclude">
+  <link name="BODY">
+    <visual>
+      <origin xyz="0 0 0.988" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="~/BODY_mesh.dae" scale="1 1 1" />
+      </geometry>
+          
+  <joint name="R_ANKLE_P" type="revolute">
+    <parent link="R_ANKLE_R_LINK"/>
+    <child  link="R_ANKLE_P_LINK"/>
+    <origin xyz="0 0 0" rpy="0 -0 0 "/>
+    <axis   xyz="0 1 0"/>
+    <limit lower="-1.74533" upper="0.698132" effort="104.269" velocity="6.399" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="R_ANKLE_P_trans" >
+    <actuator name="R_ANKLE_P_motor" />
+    <joint name="R_ANKLE_P" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="R_ANKLE_P">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+</robot>
