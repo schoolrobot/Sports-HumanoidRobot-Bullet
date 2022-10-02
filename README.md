@@ -6,4 +6,5 @@
 ### Fall-Prevention Program
 ![Robot in Split](https://github.com/etorobot/DRL-Sports-HumanoidRobot-Bullet/blob/main/pictures/Pybullet_Split.png)
 ### Athletic Stance
-![Athletic stance](https://github.com/etorobot/Sports-HumanoidRobot-Bullet/blob/main/pictures/athletic%20stance2.png)
+<img src="https://github.com/etorobot/Sports-HumanoidRobot-Bullet/blob/main/pictures/athletic%20stance2.png" width="500"/> !<img src="https://github.com/etorobot/Sports-HumanoidRobot-Bullet/blob/main/pictures/athletic%20stance2.png" width="440"/>
+![Athletic stance]()
