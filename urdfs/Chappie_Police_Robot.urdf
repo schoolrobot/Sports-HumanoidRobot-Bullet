@@ -1,0 +1,2829 @@
+<?xml version="1.0"?>
+<robot name="RHP5E"
+       xmlns:xi="http://www.w3.org/2001/XInclude">
+  <link name="BODY">
+    <visual>
+      <origin xyz="0 0 0.988" rpy="0 -0 0"/>
+      <material name = "chappie blue">
+        <color rgba= "0.15 0.23 0.34 1"/>
+      </material>
+      <geometry>
+        <mesh filename="/home/admin/dribble_repo/RHP5E_latest/BODY_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0.988" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="/home/admin/dribble_repo/RHP5E_latest/BODY_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="5.183" />
+      <origin xyz="-0.02297 -9e-06 0.042336" rpy="0 -0 0"/>
+      <inertia ixx="0.062" ixy="6.664e-06" ixz="0.004" iyy="0.032" iyz="2.484e-06" izz="0.056"/>
+    </inertial>
+  </link>
+  <gazebo reference="BODY">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="CHEST_Y_LINK">
+    <visual>
+      <origin xyz="0 0 0.14" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="/home/admin/dribble_repo/RHP5E_latest/CHEST_Y_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+
+      <material name = "chappie orange">
+      </material>           
+    </visual>
+    <collision>
+      <origin xyz="0 0 0.14" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="/home/admin/dribble_repo/RHP5E_latest/CHEST_Y_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="1.047" />
+      <origin xyz="7.4e-05 7.2e-05 -0.023676" rpy="0 -0 0"/>
+      <inertia ixx="0.002" ixy="-7.84034e-18" ixz="1.96e-06" iyy="0.002" iyz="-3.81407e-16" izz="0.002"/>
+    </inertial>
+  </link>
+  <gazebo reference="CHEST_Y_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="CHEST_P_LINK">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="/home/admin/dribble_repo/RHP5E_latest/CHEST_P_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+      <material name = "chappie blue">
+      </material>      
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="/home/admin/dribble_repo/RHP5E_latest/CHEST_P_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="19.909" />
+      <origin xyz="-0.043722 -0.000307 0.253039" rpy="0 -0 0"/>
+      <inertia ixx="1.682" ixy="-0.002" ixz="0.227" iyy="1.697" iyz="0.003" izz="0.227"/>
+    </inertial>
+  </link>
+  <gazebo reference="CHEST_P_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="HEAD_Y_LINK">
+    <visual>
+      <origin xyz="0 0 0.46" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="/home/admin/dribble_repo/RHP5E_latest/HEAD_Y_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+      <material name = "chappie orange">
+        <color rgba= "1 0.35 0 1"/>
+      </material>        
+    </visual>
+    <collision>
+      <origin xyz="0 0 0.46" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="/home/admin/dribble_repo/RHP5E_latest/HEAD_Y_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.102" />
+      <origin xyz="8.40831e-12 1.42352e-11 -0.024286" rpy="0 -0 0"/>
+      <inertia ixx="8.414e-05" ixy="2.019e-13" ixz="1.946e-14" iyy="8.323e-05" iyz="3.295e-14" izz="3.142e-05"/>
+    </inertial>
+  </link>
+  <gazebo reference="HEAD_Y_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="HEAD_P_LINK">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="/home/admin/dribble_repo/RHP5E_latest/HEAD_P_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+      <material name = "chappie blue">
+      </material>        
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="/home/admin/dribble_repo/RHP5E_latest/HEAD_P_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="3.476" />
+      <origin xyz="-0.005469 8.1e-05 0.088677" rpy="0 -0 0"/>
+      <inertia ixx="0.04" ixy="-1.172e-05" ixz="0.002" iyy="0.038" iyz="-1.196e-05" izz="0.005"/>
+    </inertial>
+  </link>
+  <gazebo reference="HEAD_P_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="LC-W-base_LINK">
+    <visual>
+      <origin xyz="0.04 0.081 0.295" rpy="0 -0.057758 0"/>
+      <geometry>
+        <mesh filename="/home/admin/dribble_repo/RHP5E_latest/LC-W-base_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0.04 0.081 0.295" rpy="0 -0.057758 0"/>
+      <geometry>
+        <mesh filename="/home/admin/dribble_repo/RHP5E_latest/LC-W-base_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.898" />
+      <origin xyz="0.015757 -0.001224 -0.103097" rpy="0 -0 0"/>
+      <inertia ixx="0.013" ixy="2.828e-05" ixz="0.001" iyy="0.014" iyz="-0.000118" izz="0.0006615"/>
+    </inertial>
+  </link>
+  <gazebo reference="LC-W-base_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="LC_W_LINK">
+    <visual>
+      <origin xyz="0 0 0" rpy="3.14159 3.67518e-15 3.14159"/>
+      <geometry>
+        <mesh filename="/home/admin/dribble_repo/RHP5E_latest/LC_W_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="3.14159 3.67518e-15 3.14159"/>
+      <geometry>
+        <mesh filename="/home/admin/dribble_repo/RHP5E_latest/LC_W_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.001" />
+      <origin xyz="0 0 -0.0775" rpy="0 -0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+  </link>
+  <gazebo reference="LC_W_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="L_SHOULDER_P_LINK">
+    <visual>
+      <origin xyz="0 0.264 0.36" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="/home/admin/dribble_repo/RHP5E_latest/L_SHOULDER_P_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+      <material name = "chappie blue">
+      </material>      
+    </visual>
+    <collision>
+      <origin xyz="0 0.264 0.36" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="/home/admin/dribble_repo/RHP5E_latest/L_SHOULDER_P_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="5.272" />
+      <origin xyz="-0.001097 -0.051102 0.004403" rpy="0 -0 0"/>
+      <inertia ixx="0.031" ixy="-9.547e-05" ixz="-0.0005419" iyy="0.013" iyz="0.0007927" izz="0.034"/>
+    </inertial>
+  </link>
+  <gazebo reference="L_SHOULDER_P_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="L_SHOULDER_R_LINK">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="/home/admin/dribble_repo/RHP5E_latest/L_SHOULDER_R_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+      <material name = "chappie black">
+      <color rgba= "0.25 0.25 0.25 1"/>
+      </material>      
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="/home/admin/dribble_repo/RHP5E_latest/L_SHOULDER_R_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="1.415" />
+      <origin xyz="-0.012187 -0.001927 -0.170727" rpy="0 -0 0"/>
+      <inertia ixx="0.056" ixy="-4.079e-05" ixz="-0.003" iyy="0.056" iyz="-0.0005938" izz="0.003"/>
+    </inertial>
+  </link>
+  <gazebo reference="L_SHOULDER_R_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="L_SHOULDER_Y_LINK">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="/home/admin/dribble_repo/RHP5E_latest/L_SHOULDER_Y_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+      <material name = "chappie orange">
+      </material>       
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="/home/admin/dribble_repo/RHP5E_latest/L_SHOULDER_Y_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.88" />
+      <origin xyz="-0.000863 1.61066e-12 -0.028072" rpy="0 -0 0"/>
+      <inertia ixx="0.002" ixy="3.05252e-15" ixz="7.409e-06" iyy="0.002" iyz="7.73803e-15" izz="0.0007754"/>
+    </inertial>
+  </link>
+  <gazebo reference="L_SHOULDER_Y_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="LC-E-base_LINK">
+    <visual>
+      <origin xyz="-0.05 0 -0.05" rpy="0 -0.0996583 0"/>
+      <geometry>
+        <mesh filename="/home/admin/dribble_repo/RHP5E_latest/LC-E-base_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="-0.05 0 -0.05" rpy="0 -0.0996583 0"/>
+      <geometry>
+        <mesh filename="/home/admin/dribble_repo/RHP5E_latest/LC-E-base_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.878" />
+      <origin xyz="-0.006177 0.025253 -0.035905" rpy="0 -0 0"/>
+      <inertia ixx="0.005" ixy="0.0002771" ixz="-9.865e-05" iyy="0.004" iyz="0.0003626" izz="0.001"/>
+    </inertial>
+  </link>
+  <gazebo reference="LC-E-base_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="LC_E_LINK">
+    <visual>
+      <origin xyz="0 0 0" rpy="3.14159 3.67518e-15 3.14159"/>
+      <geometry>
+        <mesh filename="/home/admin/dribble_repo/RHP5E_latest/LC_E_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="3.14159 3.67518e-15 3.14159"/>
+      <geometry>
+        <mesh filename="/home/admin/dribble_repo/RHP5E_latest/LC_E_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.001" />
+      <origin xyz="-6.93889e-18 0 -5.55112e-17" rpy="0 -0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+  </link>
+  <gazebo reference="LC_E_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="L_ELBOW_P_LINK">
+    <visual>
+      <origin xyz="0 0 -0.33" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="/home/admin/dribble_repo/RHP5E_latest/L_ELBOW_P_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+      <material name = "chappie orange">
+        <color rgba= "1 0.35 0 1"/>
+      </material>      
+    </visual>
+    <collision>
+      <origin xyz="0 0 -0.33" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="/home/admin/dribble_repo/RHP5E_latest/L_ELBOW_P_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="1.638" />
+      <origin xyz="-0.003888 0.018924 -0.051858" rpy="0 -0 0"/>
+      <inertia ixx="0.009" ixy="4.5e-05" ixz="2.654e-05" iyy="0.008" iyz="0.001" izz="0.003"/>
+    </inertial>
+  </link>
+  <gazebo reference="L_ELBOW_P_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="L_ELBOW_Y_LINK">
+    <visual>
+      <origin xyz="0 0 -0.3" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="/home/admin/dribble_repo/RHP5E_latest/L_ELBOW_Y_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+      <material name = "chappie orange">
+      </material>      
+    </visual>
+    <collision>
+      <origin xyz="0 0 -0.3" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="/home/admin/dribble_repo/RHP5E_latest/L_ELBOW_Y_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="2.088" />
+      <origin xyz="0.000168 -0.000251 0.078722" rpy="0 -0 0"/>
+      <inertia ixx="0.022" ixy="3.04e-05" ixz="-2.293e-05" iyy="0.021" iyz="3.457e-07" izz="0.002"/>
+    </inertial>
+  </link>
+  <gazebo reference="L_ELBOW_Y_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="L_WRIST_P_LINK">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="/home/admin/dribble_repo/RHP5E_latest/L_WRIST_P_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+      <material name = "chappie orange">
+      </material>        
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="/home/admin/dribble_repo/RHP5E_latest/L_WRIST_P_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.054" />
+      <origin xyz="1.6122e-11 -6.45397e-10 -0.010137" rpy="0 -0 0"/>
+      <inertia ixx="1.882e-05" ixy="7.16945e-22" ixz="6.399e-15" iyy="1.687e-05" iyz="-2.562e-13" izz="9.165e-06"/>
+    </inertial>
+  </link>
+  <gazebo reference="L_WRIST_P_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="L_WRIST_Y_LINK">
+    <visual>
+      <origin xyz="0 0 -0.04" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="/home/admin/dribble_repo/RHP5E_latest/L_WRIST_Y_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+      <material name = "chappie black">
+      </material>      
+    </visual>
+    <collision>
+      <origin xyz="0 0 -0.04" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="/home/admin/dribble_repo/RHP5E_latest/L_WRIST_Y_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="1.796" />
+      <origin xyz="0.012691 -0.003693 -0.096257" rpy="0 -0 0"/>
+      <inertia ixx="0.023" ixy="0.0001093" ixz="0.002" iyy="0.024" iyz="-0.001" izz="0.004"/>
+    </inertial>
+  </link>
+  <gazebo reference="L_WRIST_Y_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="L_HAND_LINK">
+    <visual>
+      <origin xyz="0 0.02 -0.0834" rpy="0 -0 3.14159"/>
+      <geometry>
+        <mesh filename="/home/admin/dribble_repo/RHP5E_latest/L_HAND_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+      <material name = "chappie black">
+      </material>        
+    </visual>
+    <collision>
+      <origin xyz="0 0.02 -0.0834" rpy="0 -0 3.14159"/>
+      <geometry>
+        <mesh filename="/home/admin/dribble_repo/RHP5E_latest/L_HAND_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.001" />
+      <origin xyz="0 0 5.55112e-17" rpy="0 -0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+  </link>
+  <gazebo reference="L_HAND_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <!-- <link name="l-one-finger-link">
+    <visual>
+      <origin xyz="0 -0.02 -0.1" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="/home/admin/dribble_repo/RHP5E_latest/l-one-finger-link_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 -0.02 -0.1" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="/home/admin/dribble_repo/RHP5E_latest/l-one-finger-link_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.001" />
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+  </link>
+  <gazebo reference="l-one-finger-link">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo> -->
+  <link name="RC-W-base_LINK">
+    <visual>
+      <origin xyz="0.04 -0.081 0.295" rpy="0 -0.057758 0"/>
+      <geometry>
+        <mesh filename="/home/admin/dribble_repo/RHP5E_latest/RC-W-base_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0.04 -0.081 0.295" rpy="0 -0.057758 0"/>
+      <geometry>
+        <mesh filename="/home/admin/dribble_repo/RHP5E_latest/RC-W-base_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.898" />
+      <origin xyz="0.015757 -0.001224 -0.103097" rpy="0 -0 0"/>
+      <inertia ixx="0.013" ixy="2.828e-05" ixz="0.001" iyy="0.014" iyz="-0.000118" izz="0.0006615"/>
+    </inertial>
+  </link>
+  <gazebo reference="RC-W-base_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="RC_W_LINK">
+    <visual>
+      <origin xyz="0 0 0" rpy="3.14159 3.67518e-15 3.14159"/>
+      <geometry>
+        <mesh filename="/home/admin/dribble_repo/RHP5E_latest/RC_W_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="3.14159 3.67518e-15 3.14159"/>
+      <geometry>
+        <mesh filename="/home/admin/dribble_repo/RHP5E_latest/RC_W_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.001" />
+      <origin xyz="0 0 5.55112e-17" rpy="0 -0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+  </link>
+  <gazebo reference="RC_W_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="R_SHOULDER_P_LINK">
+    <visual>
+      <origin xyz="0 -0.264 0.36" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="/home/admin/dribble_repo/RHP5E_latest/R_SHOULDER_P_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+      <material name = "chappie blue">
+      </material>      
+    </visual>
+    <collision>
+      <origin xyz="0 -0.264 0.36" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="/home/admin/dribble_repo/RHP5E_latest/R_SHOULDER_P_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="5.272" />
+      <origin xyz="-0.001097 0.051102 0.004403" rpy="0 -0 0"/>
+      <inertia ixx="0.031" ixy="9.547e-05" ixz="-0.0005419" iyy="0.013" iyz="-0.0007927" izz="0.034"/>
+    </inertial>
+  </link>
+  <gazebo reference="R_SHOULDER_P_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="R_SHOULDER_R_LINK">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="/home/admin/dribble_repo/RHP5E_latest/R_SHOULDER_R_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+      <material name = "chappie orange">
+      </material>        
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="/home/admin/dribble_repo/RHP5E_latest/R_SHOULDER_R_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="1.415" />
+      <origin xyz="-0.012187 0.001927 -0.170727" rpy="0 -0 0"/>
+      <inertia ixx="0.056" ixy="4.079e-05" ixz="-0.003" iyy="0.056" iyz="0.0005938" izz="0.003"/>
+    </inertial>
+  </link>
+  <gazebo reference="R_SHOULDER_R_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="R_SHOULDER_Y_LINK">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="/home/admin/dribble_repo/RHP5E_latest/R_SHOULDER_Y_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+      <material name = "chappie blue">
+      </material>      
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="/home/admin/dribble_repo/RHP5E_latest/R_SHOULDER_Y_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.88" />
+      <origin xyz="-0.000863 -1.61066e-12 -0.028072" rpy="0 -0 0"/>
+      <inertia ixx="0.002" ixy="-3.05252e-15" ixz="7.409e-06" iyy="0.002" iyz="-7.73803e-15" izz="0.0007754"/>
+    </inertial>
+  </link>
+  <gazebo reference="R_SHOULDER_Y_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="RC-E-base_LINK">
+    <visual>
+      <origin xyz="-0.05 0 -0.05" rpy="0 -0.0996583 0"/>
+      <geometry>
+        <mesh filename="/home/admin/dribble_repo/RHP5E_latest/RC-E-base_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="-0.05 0 -0.05" rpy="0 -0.0996583 0"/>
+      <geometry>
+        <mesh filename="/home/admin/dribble_repo/RHP5E_latest/RC-E-base_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.878" />
+      <origin xyz="-0.006177 0.025253 -0.035905" rpy="0 -0 0"/>
+      <inertia ixx="0.005" ixy="0.0002771" ixz="-9.865e-05" iyy="0.004" iyz="0.0003626" izz="0.001"/>
+    </inertial>
+  </link>
+  <gazebo reference="RC-E-base_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="RC_E_LINK">
+    <visual>
+      <origin xyz="0 0 0" rpy="3.14159 3.67518e-15 3.14159"/>
+      <geometry>
+        <mesh filename="/home/admin/dribble_repo/RHP5E_latest/RC_E_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="3.14159 3.67518e-15 3.14159"/>
+      <geometry>
+        <mesh filename="/home/admin/dribble_repo/RHP5E_latest/RC_E_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.001" />
+      <origin xyz="-6.93889e-18 0 -5.55112e-17" rpy="0 -0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+  </link>
+  <gazebo reference="RC_E_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="R_ELBOW_P_LINK">
+    <visual>
+      <origin xyz="0 0 -0.33" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="/home/admin/dribble_repo/RHP5E_latest/R_ELBOW_P_LINK_mesh.dae" scale="1 1 1" />
+      </geometry> 
+      <material name = "chappie black">
+      </material>      
+    </visual>
+    <collision>
+      <origin xyz="0 0 -0.33" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="/home/admin/dribble_repo/RHP5E_latest/R_ELBOW_P_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="1.638" />
+      <origin xyz="-0.003888 -0.018924 -0.051858" rpy="0 -0 0"/>
+      <inertia ixx="0.009" ixy="-4.5e-05" ixz="2.654e-05" iyy="0.008" iyz="-0.001" izz="0.003"/>
+    </inertial>
+  </link>
+  <gazebo reference="R_ELBOW_P_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="R_ELBOW_Y_LINK">
+    <visual>
+      <origin xyz="0 0 -0.3" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="/home/admin/dribble_repo/RHP5E_latest/R_ELBOW_Y_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+      <material name = "chappie blue">
+      </material>      
+    </visual>
+    <collision>
+      <origin xyz="0 0 -0.3" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="/home/admin/dribble_repo/RHP5E_latest/R_ELBOW_Y_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="2.088" />
+      <origin xyz="0.000168 0.000251 0.078722" rpy="0 -0 0"/>
+      <inertia ixx="0.022" ixy="-3.04e-05" ixz="-2.293e-05" iyy="0.021" iyz="-3.457e-07" izz="0.002"/>
+    </inertial>
+  </link>
+  <gazebo reference="R_ELBOW_Y_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="R_WRIST_P_LINK">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="/home/admin/dribble_repo/RHP5E_latest/R_WRIST_P_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+      <material name = "chappie orange">
+      </material>        
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="/home/admin/dribble_repo/RHP5E_latest/R_WRIST_P_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.054" />
+      <origin xyz="1.6122e-11 6.45397e-10 -0.010137" rpy="0 -0 0"/>
+      <inertia ixx="1.882e-05" ixy="-7.16945e-22" ixz="6.399e-15" iyy="1.687e-05" iyz="2.562e-13" izz="9.165e-06"/>
+    </inertial>
+  </link>
+  <gazebo reference="R_WRIST_P_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="R_WRIST_Y_LINK">
+    <visual>
+      <origin xyz="0 0 -0.04" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="/home/admin/dribble_repo/RHP5E_latest/R_WRIST_Y_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+      <material name = "chappie black">
+      </material>      
+    </visual>
+    <collision>
+      <origin xyz="0 0 -0.04" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="/home/admin/dribble_repo/RHP5E_latest/R_WRIST_Y_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="1.796" />
+      <origin xyz="0.012691 0.003693 -0.096257" rpy="0 -0 0"/>
+      <inertia ixx="0.023" ixy="-0.0001093" ixz="0.002" iyy="0.024" iyz="0.001" izz="0.004"/>
+    </inertial>
+  </link>
+  <gazebo reference="R_WRIST_Y_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="R_HAND_LINK">
+    <visual>
+      <origin xyz="0 -0.02 -0.0834" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="/home/admin/dribble_repo/RHP5E_latest/R_HAND_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+      <material name = "chappie black">
+      </material>        
+    </visual>
+    <collision>
+      <origin xyz="0 -0.02 -0.0834" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="/home/admin/dribble_repo/RHP5E_latest/R_HAND_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.001" />
+      <origin xyz="0 0 5.55112e-17" rpy="0 -0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+  </link>
+  <gazebo reference="R_HAND_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <!-- <link name="r-one-finger-link">
+    <visual>
+      <origin xyz="0 0.02 -0.1" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="/home/admin/dribble_repo/RHP5E_latest/r-one-finger-link_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0.02 -0.1" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="/home/admin/dribble_repo/RHP5E_latest/r-one-finger-link_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.001" />
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+  </link>
+  <gazebo reference="r-one-finger-link">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo> -->
+  <link name="L_CROTCH_Y_LINK">
+    <visual>
+      <origin xyz="0 0.105 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="/home/admin/dribble_repo/RHP5E_latest/L_CROTCH_Y_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+      <material name = "chappie orange">
+      </material>        
+    </visual>
+    <collision>
+      <origin xyz="0 0.105 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="/home/admin/dribble_repo/RHP5E_latest/L_CROTCH_Y_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.91" />
+      <origin xyz="-0.005735 1e-06 0.041628" rpy="0 -0 0"/>
+      <inertia ixx="0.003" ixy="-1.864e-10" ixz="8.354e-05" iyy="0.003" iyz="-4.067e-08" izz="0.001"/>
+    </inertial>
+  </link>
+  <gazebo reference="L_CROTCH_Y_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="L_CROTCH_R_LINK">
+    <visual>
+      <origin xyz="0 0 -0.06" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="/home/admin/dribble_repo/RHP5E_latest/L_CROTCH_R_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+      <material name = "chappie orange">
+      </material>        
+    </visual>
+    <collision>
+      <origin xyz="0 0 -0.06" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="/home/admin/dribble_repo/RHP5E_latest/L_CROTCH_R_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.146" />
+      <origin xyz="-6.97382e-19 0 -1.7833e-15" rpy="0 -0 0"/>
+      <inertia ixx="5.76e-05" ixy="-3.507e-16" ixz="3.1351e-22" iyy="9.606e-06" iyz="-1.47949e-28" izz="6.016e-05"/>
+    </inertial>
+  </link>
+  <gazebo reference="L_CROTCH_R_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="L_CROTCH_P_LINK">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="/home/admin/dribble_repo/RHP5E_latest/L_CROTCH_P_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="/home/admin/dribble_repo/RHP5E_latest/L_CROTCH_P_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="3.296" />
+      <origin xyz="0.003744 0.001549 -0.210169" rpy="0 -0 0"/>
+      <inertia ixx="0.221" ixy="0.000142" ixz="0.015" iyy="0.223" iyz="0.0003025" izz="0.012"/>
+    </inertial>
+  </link>
+  <gazebo reference="L_CROTCH_P_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="LC-CI-base_LINK">
+    <visual>
+      <origin xyz="0 -0.04 -0.35" rpy="3.14159 0.231183 3.14159"/>
+      <geometry>
+        <mesh filename="/home/admin/dribble_repo/RHP5E_latest/LC-CI-base_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+      <material name = "chappie blue">
+      </material>      
+    </visual>
+    <collision>
+      <origin xyz="0 -0.04 -0.35" rpy="3.14159 0.231183 3.14159"/>
+      <geometry>
+        <mesh filename="/home/admin/dribble_repo/RHP5E_latest/LC-CI-base_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.901" />
+      <origin xyz="0.016864 -3.1e-05 -0.099151" rpy="0 -0 0"/>
+      <inertia ixx="0.012" ixy="4.304e-06" ixz="0.001" iyy="0.013" iyz="9.917e-07" izz="0.000729"/>
+    </inertial>
+  </link>
+  <gazebo reference="LC-CI-base_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="LC_CI_LINK">
+    <visual>
+      <origin xyz="0 0 0" rpy="3.14159 3.67518e-15 3.14159"/>
+      <geometry>
+        <mesh filename="/home/admin/dribble_repo/RHP5E_latest/LC_CI_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="3.14159 3.67518e-15 3.14159"/>
+      <geometry>
+        <mesh filename="/home/admin/dribble_repo/RHP5E_latest/LC_CI_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.001" />
+      <origin xyz="1.38778e-17 0 5.55112e-17" rpy="0 -0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+  </link>
+  <gazebo reference="LC_CI_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="LC-CI-hinge_LINK">
+    <visual>
+      <origin xyz="0 0.04 -0.05" rpy="0 -0.253073 0"/>
+      <geometry>
+        <mesh filename="/home/admin/dribble_repo/RHP5E_latest/LC-CI-hinge_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0.04 -0.05" rpy="0 -0.253073 0"/>
+      <geometry>
+        <mesh filename="/home/admin/dribble_repo/RHP5E_latest/LC-CI-hinge_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.001" />
+      <origin xyz="2.08167e-17 0 8.32667e-17" rpy="0 -0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+  </link>
+  <gazebo reference="LC-CI-hinge_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="LC-CO-base_LINK">
+    <visual>
+      <origin xyz="0 0.04 -0.35" rpy="3.14159 0.231183 3.14159"/>
+      <geometry>
+        <mesh filename="/home/admin/dribble_repo/RHP5E_latest/LC-CO-base_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0.04 -0.35" rpy="3.14159 0.231183 3.14159"/>
+      <geometry>
+        <mesh filename="/home/admin/dribble_repo/RHP5E_latest/LC-CO-base_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.901" />
+      <origin xyz="0.016864 -3.1e-05 -0.099151" rpy="0 -0 0"/>
+      <inertia ixx="0.012" ixy="4.304e-06" ixz="0.001" iyy="0.013" iyz="9.917e-07" izz="0.000729"/>
+    </inertial>
+  </link>
+  <gazebo reference="LC-CO-base_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="LC_CO_LINK">
+    <visual>
+      <origin xyz="0 0 0" rpy="3.14159 3.67518e-15 3.14159"/>
+      <geometry>
+        <mesh filename="/home/admin/dribble_repo/RHP5E_latest/LC_CO_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="3.14159 3.67518e-15 3.14159"/>
+      <geometry>
+        <mesh filename="/home/admin/dribble_repo/RHP5E_latest/LC_CO_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.001" />
+      <origin xyz="1.38778e-17 0 5.55112e-17" rpy="0 -0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+  </link>
+  <gazebo reference="LC_CO_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="LC-CO-hinge_LINK">
+    <visual>
+      <origin xyz="0 -0.04 -0.05" rpy="0 -0.253073 0"/>
+      <geometry>
+        <mesh filename="/home/admin/dribble_repo/RHP5E_latest/LC-CO-hinge_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 -0.04 -0.05" rpy="0 -0.253073 0"/>
+      <geometry>
+        <mesh filename="/home/admin/dribble_repo/RHP5E_latest/LC-CO-hinge_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.001" />
+      <origin xyz="2.08167e-17 0 8.32667e-17" rpy="0 -0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+  </link>
+  <gazebo reference="LC-CO-hinge_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="LC-K-base_LINK">
+    <visual>
+      <origin xyz="0.04 0 -0.11" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="/home/admin/dribble_repo/RHP5E_latest/LC-K-base_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0.04 0 -0.11" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="/home/admin/dribble_repo/RHP5E_latest/LC-K-base_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="1.034" />
+      <origin xyz="0.001026 -0.027098 -0.041376" rpy="0 -0 0"/>
+      <inertia ixx="0.006" ixy="5.64e-05" ixz="7.088e-05" iyy="0.005" iyz="-0.0008262" izz="0.002"/>
+    </inertial>
+  </link>
+  <gazebo reference="LC-K-base_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="LC_K_LINK">
+    <visual>
+      <origin xyz="0 0 0" rpy="3.14159 3.67518e-15 3.14159"/>
+      <geometry>
+        <mesh filename="/home/admin/dribble_repo/RHP5E_latest/LC_K_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="3.14159 3.67518e-15 3.14159"/>
+      <geometry>
+        <mesh filename="/home/admin/dribble_repo/RHP5E_latest/LC_K_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.001" />
+      <origin xyz="0 0 -2.77556e-17" rpy="0 -0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+  </link>
+  <gazebo reference="LC_K_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="L_KNEE_P_LINK">
+    <visual>
+      <origin xyz="0 0 -0.415" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="/home/admin/dribble_repo/RHP5E_latest/L_KNEE_P_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+      <material name = "chappie blue">
+      </material>        
+    </visual>
+    <collision>
+      <origin xyz="0 0 -0.415" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="/home/admin/dribble_repo/RHP5E_latest/L_KNEE_P_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="2.673" />
+      <origin xyz="-0.003601 0.000575 -0.206122" rpy="0 -0 0"/>
+      <inertia ixx="0.184" ixy="-2.633e-05" ixz="-0.011" iyy="0.184" iyz="0.0002587" izz="0.008"/>
+    </inertial>
+  </link>
+  <gazebo reference="L_KNEE_P_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="LC-AI-base_LINK">
+    <visual>
+      <origin xyz="0 -0.04 -0.08" rpy="0 0.17994 0"/>
+      <geometry>
+        <mesh filename="/home/admin/dribble_repo/RHP5E_latest/LC-AI-base_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 -0.04 -0.08" rpy="0 0.17994 0"/>
+      <geometry>
+        <mesh filename="/home/admin/dribble_repo/RHP5E_latest/LC-AI-base_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.901" />
+      <origin xyz="0.016864 -3.1e-05 -0.099151" rpy="0 -0 0"/>
+      <inertia ixx="0.012" ixy="4.304e-06" ixz="0.001" iyy="0.013" iyz="9.917e-07" izz="0.000729"/>
+    </inertial>
+  </link>
+  <gazebo reference="LC-AI-base_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="LC_AI_LINK">
+    <visual>
+      <origin xyz="0 0 0" rpy="3.14159 3.67518e-15 3.14159"/>
+      <geometry>
+        <mesh filename="/home/admin/dribble_repo/RHP5E_latest/LC_AI_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="3.14159 3.67518e-15 3.14159"/>
+      <geometry>
+        <mesh filename="/home/admin/dribble_repo/RHP5E_latest/LC_AI_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.001" />
+      <origin xyz="4.16334e-17 0 -2.22045e-16" rpy="0 -0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+  </link>
+  <gazebo reference="LC_AI_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="LC-AI-hinge_LINK">
+    <visual>
+      <origin xyz="0 -0.04 -0.4" rpy="0 0.253073 0"/>
+      <geometry>
+        <mesh filename="/home/admin/dribble_repo/RHP5E_latest/LC-AI-hinge_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 -0.04 -0.4" rpy="0 0.253073 0"/>
+      <geometry>
+        <mesh filename="/home/admin/dribble_repo/RHP5E_latest/LC-AI-hinge_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.001" />
+      <origin xyz="-2.77556e-17 0 1.11022e-16" rpy="0 -0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+  </link>
+  <gazebo reference="LC-AI-hinge_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="LC-AO-base_LINK">
+    <visual>
+      <origin xyz="0 0.04 -0.08" rpy="0 0.17994 0"/>
+      <geometry>
+        <mesh filename="/home/admin/dribble_repo/RHP5E_latest/LC-AO-base_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0.04 -0.08" rpy="0 0.17994 0"/>
+      <geometry>
+        <mesh filename="/home/admin/dribble_repo/RHP5E_latest/LC-AO-base_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.901" />
+      <origin xyz="0.016864 -3.1e-05 -0.099151" rpy="0 -0 0"/>
+      <inertia ixx="0.012" ixy="4.304e-06" ixz="0.001" iyy="0.013" iyz="9.917e-07" izz="0.000729"/>
+    </inertial>
+  </link>
+  <gazebo reference="LC-AO-base_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="LC_AO_LINK">
+    <visual>
+      <origin xyz="0 0 0" rpy="3.14159 3.67518e-15 3.14159"/>
+      <geometry>
+        <mesh filename="/home/admin/dribble_repo/RHP5E_latest/LC_AO_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="3.14159 3.67518e-15 3.14159"/>
+      <geometry>
+        <mesh filename="/home/admin/dribble_repo/RHP5E_latest/LC_AO_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.001" />
+      <origin xyz="4.16334e-17 0 -2.22045e-16" rpy="0 -0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+  </link>
+  <gazebo reference="LC_AO_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="LC-AO-hinge_LINK">
+    <visual>
+      <origin xyz="0 0.04 -0.4" rpy="0 0.253073 0"/>
+      <geometry>
+        <mesh filename="/home/admin/dribble_repo/RHP5E_latest/LC-AO-hinge_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0.04 -0.4" rpy="0 0.253073 0"/>
+      <geometry>
+        <mesh filename="/home/admin/dribble_repo/RHP5E_latest/LC-AO-hinge_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.001" />
+      <origin xyz="-2.77556e-17 0 1.11022e-16" rpy="0 -0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+  </link>
+  <gazebo reference="LC-AO-hinge_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="L_ANKLE_R_LINK">
+    <visual>
+      <origin xyz="0 0 -0.415" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="/home/admin/dribble_repo/RHP5E_latest/L_ANKLE_R_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+      <material name = "chappie orange">
+      </material>        
+    </visual>
+    <collision>
+      <origin xyz="0 0 -0.415" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="/home/admin/dribble_repo/RHP5E_latest/L_ANKLE_R_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.184" />
+      <origin xyz="0.000293 -1.38778e-17 -1.22125e-15" rpy="0 -0 0"/>
+      <inertia ixx="4.364e-05" ixy="-3.042e-16" ixz="2.824e-20" iyy="5.599e-05" iyz="2.13596e-18" izz="9.181e-05"/>
+    </inertial>
+  </link>
+  <gazebo reference="L_ANKLE_R_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="L_ANKLE_P_LINK">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="/home/admin/dribble_repo/RHP5E_latest/L_ANKLE_P_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+      <material name = "chappie black">
+      </material>      
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="/home/admin/dribble_repo/RHP5E_latest/L_ANKLE_P_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="2.021" />
+      <origin xyz="0.008449 0.001627 -0.069222" rpy="0 -0 0"/>
+      <inertia ixx="0.014" ixy="-4.386e-05" ixz="0.002" iyy="0.018" iyz="0.0002942" izz="0.01"/>
+    </inertial>
+  </link>
+  <gazebo reference="L_ANKLE_P_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="R_CROTCH_Y_LINK">
+    <visual>
+      <origin xyz="0 -0.105 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="/home/admin/dribble_repo/RHP5E_latest/R_CROTCH_Y_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+      <material name = "chappie orange">
+      </material>        
+    </visual>
+    <collision>
+      <origin xyz="0 -0.105 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="/home/admin/dribble_repo/RHP5E_latest/R_CROTCH_Y_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.91" />
+      <origin xyz="-0.005735 -1e-06 0.041628" rpy="0 -0 0"/>
+      <inertia ixx="0.003" ixy="1.864e-10" ixz="8.354e-05" iyy="0.003" iyz="4.067e-08" izz="0.001"/>
+    </inertial>
+  </link>
+  <gazebo reference="R_CROTCH_Y_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="R_CROTCH_R_LINK">
+    <visual>
+      <origin xyz="0 0 -0.06" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="/home/admin/dribble_repo/RHP5E_latest/R_CROTCH_R_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+      <material name = "chappie orange">
+      </material>        
+    </visual>
+    <collision>
+      <origin xyz="0 0 -0.06" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="/home/admin/dribble_repo/RHP5E_latest/R_CROTCH_R_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.146" />
+      <origin xyz="-6.97382e-19 0 -1.7833e-15" rpy="0 -0 0"/>
+      <inertia ixx="5.76e-05" ixy="3.507e-16" ixz="3.1351e-22" iyy="9.606e-06" iyz="1.47949e-28" izz="6.016e-05"/>
+    </inertial>
+  </link>
+  <gazebo reference="R_CROTCH_R_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="R_CROTCH_P_LINK">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="/home/admin/dribble_repo/RHP5E_latest/R_CROTCH_P_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+      <material name = "chappie blue">
+      </material>      
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="/home/admin/dribble_repo/RHP5E_latest/R_CROTCH_P_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="3.296" />
+      <origin xyz="0.003744 -0.001549 -0.210169" rpy="0 -0 0"/>
+      <inertia ixx="0.221" ixy="-0.000142" ixz="0.015" iyy="0.223" iyz="-0.0003025" izz="0.012"/>
+    </inertial>
+  </link>
+  <gazebo reference="R_CROTCH_P_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="RC-CI-base_LINK">
+    <visual>
+      <origin xyz="0 0.04 -0.35" rpy="3.14159 0.231183 3.14159"/>
+      <geometry>
+        <mesh filename="/home/admin/dribble_repo/RHP5E_latest/RC-CI-base_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0.04 -0.35" rpy="3.14159 0.231183 3.14159"/>
+      <geometry>
+        <mesh filename="/home/admin/dribble_repo/RHP5E_latest/RC-CI-base_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.901" />
+      <origin xyz="0.016864 -3.1e-05 -0.099151" rpy="0 -0 0"/>
+      <inertia ixx="0.012" ixy="4.304e-06" ixz="0.001" iyy="0.013" iyz="9.917e-07" izz="0.000729"/>
+    </inertial>
+  </link>
+  <gazebo reference="RC-CI-base_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="RC_CI_LINK">
+    <visual>
+      <origin xyz="0 0 0" rpy="3.14159 3.67518e-15 3.14159"/>
+      <geometry>
+        <mesh filename="/home/admin/dribble_repo/RHP5E_latest/RC_CI_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="3.14159 3.67518e-15 3.14159"/>
+      <geometry>
+        <mesh filename="/home/admin/dribble_repo/RHP5E_latest/RC_CI_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.001" />
+      <origin xyz="1.38778e-17 0 5.55112e-17" rpy="0 -0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+  </link>
+  <gazebo reference="RC_CI_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="RC-CI-hinge_LINK">
+    <visual>
+      <origin xyz="0 0.04 -0.05" rpy="0 -0.253073 0"/>
+      <geometry>
+        <mesh filename="/home/admin/dribble_repo/RHP5E_latest/RC-CI-hinge_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0.04 -0.05" rpy="0 -0.253073 0"/>
+      <geometry>
+        <mesh filename="/home/admin/dribble_repo/RHP5E_latest/RC-CI-hinge_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.001" />
+      <origin xyz="2.08167e-17 0 8.32667e-17" rpy="0 -0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+  </link>
+  <gazebo reference="RC-CI-hinge_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="RC-CO-base_LINK">
+    <visual>
+      <origin xyz="0 -0.04 -0.35" rpy="3.14159 0.231183 3.14159"/>
+      <geometry>
+        <mesh filename="/home/admin/dribble_repo/RHP5E_latest/RC-CO-base_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 -0.04 -0.35" rpy="3.14159 0.231183 3.14159"/>
+      <geometry>
+        <mesh filename="/home/admin/dribble_repo/RHP5E_latest/RC-CO-base_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.901" />
+      <origin xyz="0.016864 -3.1e-05 -0.099151" rpy="0 -0 0"/>
+      <inertia ixx="0.012" ixy="4.304e-06" ixz="0.001" iyy="0.013" iyz="9.917e-07" izz="0.000729"/>
+    </inertial>
+  </link>
+  <gazebo reference="RC-CO-base_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="RC_CO_LINK">
+    <visual>
+      <origin xyz="0 0 0" rpy="3.14159 3.67518e-15 3.14159"/>
+      <geometry>
+        <mesh filename="/home/admin/dribble_repo/RHP5E_latest/RC_CO_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="3.14159 3.67518e-15 3.14159"/>
+      <geometry>
+        <mesh filename="/home/admin/dribble_repo/RHP5E_latest/RC_CO_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.001" />
+      <origin xyz="1.38778e-17 0 5.55112e-17" rpy="0 -0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+  </link>
+  <gazebo reference="RC_CO_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="RC-CO-hinge_LINK">
+    <visual>
+      <origin xyz="0 -0.04 -0.05" rpy="0 -0.253073 0"/>
+      <geometry>
+        <mesh filename="/home/admin/dribble_repo/RHP5E_latest/RC-CO-hinge_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 -0.04 -0.05" rpy="0 -0.253073 0"/>
+      <geometry>
+        <mesh filename="/home/admin/dribble_repo/RHP5E_latest/RC-CO-hinge_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.001" />
+      <origin xyz="2.08167e-17 0 8.32667e-17" rpy="0 -0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+  </link>
+  <gazebo reference="RC-CO-hinge_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="RC-K-base_LINK">
+    <visual>
+      <origin xyz="0.04 0 -0.11" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="/home/admin/dribble_repo/RHP5E_latest/RC-K-base_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0.04 0 -0.11" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="/home/admin/dribble_repo/RHP5E_latest/RC-K-base_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="1.034" />
+      <origin xyz="0.001026 -0.027098 -0.041376" rpy="0 -0 0"/>
+      <inertia ixx="0.006" ixy="5.64e-05" ixz="7.088e-05" iyy="0.005" iyz="-0.0008262" izz="0.002"/>
+    </inertial>
+  </link>
+  <gazebo reference="RC-K-base_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="RC_K_LINK">
+    <visual>
+      <origin xyz="0 0 0" rpy="3.14159 3.67518e-15 3.14159"/>
+      <geometry>
+        <mesh filename="/home/admin/dribble_repo/RHP5E_latest/RC_K_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="3.14159 3.67518e-15 3.14159"/>
+      <geometry>
+        <mesh filename="/home/admin/dribble_repo/RHP5E_latest/RC_K_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.001" />
+      <origin xyz="0 0 -2.77556e-17" rpy="0 -0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+  </link>
+  <gazebo reference="RC_K_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="R_KNEE_P_LINK">
+    <visual>
+      <origin xyz="0 0 -0.415" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="/home/admin/dribble_repo/RHP5E_latest/R_KNEE_P_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+      <material name = "chappie blue">
+      </material>      
+    </visual>
+    <collision>
+      <origin xyz="0 0 -0.415" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="/home/admin/dribble_repo/RHP5E_latest/R_KNEE_P_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="2.673" />
+      <origin xyz="-0.003601 -0.000575 -0.206122" rpy="0 -0 0"/>
+      <inertia ixx="0.184" ixy="2.633e-05" ixz="-0.011" iyy="0.184" iyz="-0.0002587" izz="0.008"/>
+    </inertial>
+  </link>
+  <gazebo reference="R_KNEE_P_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="RC-AI-base_LINK">
+    <visual>
+      <origin xyz="0 0.04 -0.08" rpy="0 0.17994 0"/>
+      <geometry>
+        <mesh filename="/home/admin/dribble_repo/RHP5E_latest/RC-AI-base_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0.04 -0.08" rpy="0 0.17994 0"/>
+      <geometry>
+        <mesh filename="/home/admin/dribble_repo/RHP5E_latest/RC-AI-base_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.901" />
+      <origin xyz="0.016864 -3.1e-05 -0.099151" rpy="0 -0 0"/>
+      <inertia ixx="0.012" ixy="4.304e-06" ixz="0.001" iyy="0.013" iyz="9.917e-07" izz="0.000729"/>
+    </inertial>
+  </link>
+  <gazebo reference="RC-AI-base_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="RC_AI_LINK">
+    <visual>
+      <origin xyz="0 0 0" rpy="3.14159 3.67518e-15 3.14159"/>
+      <geometry>
+        <mesh filename="/home/admin/dribble_repo/RHP5E_latest/RC_AI_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="3.14159 3.67518e-15 3.14159"/>
+      <geometry>
+        <mesh filename="/home/admin/dribble_repo/RHP5E_latest/RC_AI_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.001" />
+      <origin xyz="4.16334e-17 0 -2.22045e-16" rpy="0 -0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+  </link>
+  <gazebo reference="RC_AI_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="RC-AI-hinge_LINK">
+    <visual>
+      <origin xyz="0 0.04 -0.4" rpy="0 0.253073 0"/>
+      <geometry>
+        <mesh filename="/home/admin/dribble_repo/RHP5E_latest/RC-AI-hinge_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0.04 -0.4" rpy="0 0.253073 0"/>
+      <geometry>
+        <mesh filename="/home/admin/dribble_repo/RHP5E_latest/RC-AI-hinge_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.001" />
+      <origin xyz="-2.77556e-17 0 1.11022e-16" rpy="0 -0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+  </link>
+  <gazebo reference="RC-AI-hinge_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="RC-AO-base_LINK">
+    <visual>
+      <origin xyz="0 -0.04 -0.08" rpy="0 0.17994 0"/>
+      <geometry>
+        <mesh filename="/home/admin/dribble_repo/RHP5E_latest/RC-AO-base_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 -0.04 -0.08" rpy="0 0.17994 0"/>
+      <geometry>
+        <mesh filename="/home/admin/dribble_repo/RHP5E_latest/RC-AO-base_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.901" />
+      <origin xyz="0.016864 -3.1e-05 -0.099151" rpy="0 -0 0"/>
+      <inertia ixx="0.012" ixy="4.304e-06" ixz="0.001" iyy="0.013" iyz="9.917e-07" izz="0.000729"/>
+    </inertial>
+  </link>
+  <gazebo reference="RC-AO-base_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="RC_AO_LINK">
+    <visual>
+      <origin xyz="0 0 0" rpy="3.14159 3.67518e-15 3.14159"/>
+      <geometry>
+        <mesh filename="/home/admin/dribble_repo/RHP5E_latest/RC_AO_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="3.14159 3.67518e-15 3.14159"/>
+      <geometry>
+        <mesh filename="/home/admin/dribble_repo/RHP5E_latest/RC_AO_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.001" />
+      <origin xyz="4.16334e-17 0 -2.22045e-16" rpy="0 -0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+  </link>
+  <gazebo reference="RC_AO_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="RC-AO-hinge_LINK">
+    <visual>
+      <origin xyz="0 -0.04 -0.4" rpy="0 0.253073 0"/>
+      <geometry>
+        <mesh filename="/home/admin/dribble_repo/RHP5E_latest/RC-AO-hinge_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 -0.04 -0.4" rpy="0 0.253073 0"/>
+      <geometry>
+        <mesh filename="/home/admin/dribble_repo/RHP5E_latest/RC-AO-hinge_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.001" />
+      <origin xyz="-2.77556e-17 0 1.11022e-16" rpy="0 -0 0"/>
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+  </link>
+  <gazebo reference="RC-AO-hinge_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="R_ANKLE_R_LINK">
+    <visual>
+      <origin xyz="0 0 -0.415" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="/home/admin/dribble_repo/RHP5E_latest/R_ANKLE_R_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+      <material name="chappie orange">
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 -0.415" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="/home/admin/dribble_repo/RHP5E_latest/R_ANKLE_R_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.184" />
+      <origin xyz="0.000293 1.38778e-17 -1.22125e-15" rpy="0 -0 0"/>
+      <inertia ixx="4.364e-05" ixy="3.042e-16" ixz="2.824e-20" iyy="5.599e-05" iyz="-2.13596e-18" izz="9.181e-05"/>
+    </inertial>
+  </link>
+  <gazebo reference="R_ANKLE_R_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <link name="R_ANKLE_P_LINK">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="/home/admin/dribble_repo/RHP5E_latest/R_ANKLE_P_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+      <material name = "chappie black">
+      </material>      
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="/home/admin/dribble_repo/RHP5E_latest/R_ANKLE_P_LINK_mesh.dae" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="2.021" />
+      <origin xyz="0.008449 -0.001627 -0.069222" rpy="0 -0 0"/>
+      <inertia ixx="0.014" ixy="4.386e-05" ixz="0.002" iyy="0.018" iyz="-0.0002942" izz="0.01"/>
+    </inertial>
+  </link>
+  <gazebo reference="R_ANKLE_P_LINK">
+    <mu1>0.9</mu1>
+    <mu2>0.9</mu2>
+  </gazebo>
+  <joint name="CHEST_Y" type="revolute">
+    <parent link="BODY"/>
+    <child  link="CHEST_Y_LINK"/>
+    <origin xyz="0 0 0.14" rpy="0 -0 0 "/>
+    <axis   xyz="0 0 1"/>
+    <limit lower="-0.523599" upper="0.523599" effort="104.269" velocity="6.399" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="CHEST_Y_trans" >
+    <actuator name="CHEST_Y_motor" />
+    <joint name="CHEST_Y" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="CHEST_Y">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="CHEST_P" type="revolute">
+    <parent link="CHEST_Y_LINK"/>
+    <child  link="CHEST_P_LINK"/>
+    <origin xyz="0 0 0" rpy="0 -0 0 "/>
+    <axis   xyz="0 1 0"/>
+    <limit lower="-0.523599" upper="1.22173" effort="104.269" velocity="6.399" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="CHEST_P_trans" >
+    <actuator name="CHEST_P_motor" />
+    <joint name="CHEST_P" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="CHEST_P">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="HEAD_Y" type="revolute">
+    <parent link="CHEST_P_LINK"/>
+    <child  link="HEAD_Y_LINK"/>
+    <origin xyz="0 0 0.46" rpy="0 -0 0 "/>
+    <axis   xyz="0 0 1"/>
+    <!-- <limit lower="-1.5708" upper="1.5708" effort="6.66" velocity="9" /> -->
+    <limit lower="-0.524" upper="0.524" effort="6.66" velocity="9" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="HEAD_Y_trans" >
+    <actuator name="HEAD_Y_motor" />
+    <joint name="HEAD_Y" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="HEAD_Y">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="HEAD_P" type="revolute">
+    <parent link="HEAD_Y_LINK"/>
+    <child  link="HEAD_P_LINK"/>
+    <origin xyz="0 0 0" rpy="0 -0 0 "/>
+    <axis   xyz="0 1 0"/>
+    <limit lower="-0.523599" upper="1.0472" effort="6.66" velocity="9" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="HEAD_P_trans" >
+    <actuator name="HEAD_P_motor" />
+    <joint name="HEAD_P" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="HEAD_P">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="LC-W-base-joint" type="fixed">
+    <parent link="CHEST_P_LINK"/>
+    <child  link="LC-W-base_LINK"/>
+    <origin xyz="0.04 0.081 0.295" rpy="0 -0.057758 0 "/>
+    <axis   xyz="0 1 0"/>
+    <limit lower="0" upper="0" effort="100" velocity="0.5" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="LC-W-base-joint_trans" >
+    <actuator name="LC-W-base-joint_motor" />
+    <joint name="LC-W-base-joint" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="LC-W-base-joint">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="LC-W-linear-joint" type="fixed">
+    <parent link="LC-W-base_LINK"/>
+    <child  link="LC_W_LINK"/>
+    <origin xyz="0 0 0" rpy="3.14159 3.67518e-15 3.14159 "/>
+    <axis   xyz="0 0 1"/>
+    <limit lower="0.240125" upper="0.331606" effort="3000" velocity="0.48" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="LC-W-linear-joint_trans" >
+    <actuator name="LC-W-linear-joint_motor" />
+    <joint name="LC-W-linear-joint" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="LC-W-linear-joint">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="L_SHOULDER_P" type="revolute">
+    <parent link="CHEST_P_LINK"/>
+    <child  link="L_SHOULDER_P_LINK"/>
+    <origin xyz="0 0.264 0.36" rpy="0 -0 0 "/>
+    <axis   xyz="0 1 0"/>
+    <limit lower="-3.14159" upper="3.14159" effort="53.526" velocity="6.233" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="L_SHOULDER_P_trans" >
+    <actuator name="L_SHOULDER_P_motor" />
+    <joint name="L_SHOULDER_P" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="L_SHOULDER_P">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="L_SHOULDER_R" type="revolute">
+    <parent link="L_SHOULDER_P_LINK"/>
+    <child  link="L_SHOULDER_R_LINK"/>
+    <origin xyz="0 0 0" rpy="0 -0 0 "/>
+    <axis   xyz="1 0 0"/>
+    <limit lower="0" upper="1.74533" effort="55.755" velocity="9" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="L_SHOULDER_R_trans" >
+    <actuator name="L_SHOULDER_R_motor" />
+    <joint name="L_SHOULDER_R" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="L_SHOULDER_R">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="L_SHOULDER_Y" type="revolute">
+    <parent link="L_SHOULDER_R_LINK"/>
+    <child  link="L_SHOULDER_Y_LINK"/>
+    <origin xyz="0 0 0" rpy="0 -0 0 "/>
+    <axis   xyz="0 0 1"/>
+    <limit lower="-3.14159" upper="3.14159" effort="55.755" velocity="9" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="L_SHOULDER_Y_trans" >
+    <actuator name="L_SHOULDER_Y_motor" />
+    <joint name="L_SHOULDER_Y" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="L_SHOULDER_Y">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="LC-E-base-joint" type="fixed">
+    <parent link="L_SHOULDER_Y_LINK"/>
+    <child  link="LC-E-base_LINK"/>
+    <origin xyz="-0.05 0 -0.05" rpy="0 -0.0996583 0 "/>
+    <axis   xyz="0 1 0"/>
+    <limit lower="0" upper="0" effort="100" velocity="0.5" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="LC-E-base-joint_trans" >
+    <actuator name="LC-E-base-joint_motor" />
+    <joint name="LC-E-base-joint" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="LC-E-base-joint">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="LC-E-linear-joint" type="fixed">
+    <parent link="LC-E-base_LINK"/>
+    <child  link="LC_E_LINK"/>
+    <origin xyz="0 0 0" rpy="3.14159 3.67518e-15 3.14159 "/>
+    <axis   xyz="0 0 1"/>
+    <limit lower="0.16677" upper="0.27246" effort="3000" velocity="0.48" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="LC-E-linear-joint_trans" >
+    <actuator name="LC-E-linear-joint_motor" />
+    <joint name="LC-E-linear-joint" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="LC-E-linear-joint">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="L_ELBOW_P" type="revolute">
+    <parent link="L_SHOULDER_Y_LINK"/>
+    <child  link="L_ELBOW_P_LINK"/>
+    <origin xyz="0 0 -0.33" rpy="0 -0 0 "/>
+    <axis   xyz="0 1 0"/>
+    <limit lower="-2.26893" upper="0" effort="74.148" velocity="4.499" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="L_ELBOW_P_trans" >
+    <actuator name="L_ELBOW_P_motor" />
+    <joint name="L_ELBOW_P" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="L_ELBOW_P">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="L_ELBOW_Y" type="revolute">
+    <parent link="L_ELBOW_P_LINK"/>
+    <child  link="L_ELBOW_Y_LINK"/>
+    <origin xyz="0 0 -0.3" rpy="0 -0 0 "/>
+    <axis   xyz="0 0 1"/>
+    <limit lower="-2.00713" upper="2.00713" effort="37.086" velocity="4.499" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="L_ELBOW_Y_trans" >
+    <actuator name="L_ELBOW_Y_motor" />
+    <joint name="L_ELBOW_Y" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="L_ELBOW_Y">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="L_WRIST_P" type="revolute">
+    <parent link="L_ELBOW_Y_LINK"/>
+    <child  link="L_WRIST_P_LINK"/>
+    <origin xyz="0 0 0" rpy="0 -0 0 "/>
+    <axis   xyz="0 1 0"/>
+    <limit lower="-1.5708" upper="0.959931" effort="47.79" velocity="6.981" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="L_WRIST_P_trans" >
+    <actuator name="L_WRIST_P_motor" />
+    <joint name="L_WRIST_P" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="L_WRIST_P">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="L_WRIST_Y" type="revolute">
+    <parent link="L_WRIST_P_LINK"/>
+    <child  link="L_WRIST_Y_LINK"/>
+    <origin xyz="0 0 -0.04" rpy="0 -0 0 "/>
+    <axis   xyz="0 0 1"/>
+    <limit lower="-3.14159" upper="3.14159" effort="47.79" velocity="6.981" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="L_WRIST_Y_trans" >
+    <actuator name="L_WRIST_Y_motor" />
+    <joint name="L_WRIST_Y" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="L_WRIST_Y">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="L_HAND" type="revolute">
+    <parent link="L_WRIST_Y_LINK"/>
+    <child  link="L_HAND_LINK"/>
+    <origin xyz="0 0.02 -0.0834" rpy="0 -0 3.14159 "/>
+    <axis   xyz="1 0 0"/>
+    <limit lower="-1.0472" upper="2.16421" effort="3000" velocity="9" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="L_HAND_trans" >
+    <actuator name="L_HAND_motor" />
+    <joint name="L_HAND" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="L_HAND">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <!-- <joint name="l-one-finger" type="fixed">
+    <parent link="L_WRIST_Y_LINK"/>
+    <child  link="l-one-finger-link"/>
+    <origin xyz="0 -0.02 -0.1" rpy="0 -0 0 "/>
+    <axis   xyz="0 0 1"/>
+    <limit lower="0" upper="0" effort="100" velocity="0.5" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="l-one-finger_trans" >
+    <actuator name="l-one-finger_motor" />
+    <joint name="l-one-finger" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="l-one-finger">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo> -->
+  <joint name="RC-W-base-joint" type="fixed">
+    <parent link="CHEST_P_LINK"/>
+    <child  link="RC-W-base_LINK"/>
+    <origin xyz="0.04 -0.081 0.295" rpy="0 -0.057758 0 "/>
+    <axis   xyz="0 1 0"/>
+    <limit lower="0" upper="0" effort="100" velocity="0.5" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="RC-W-base-joint_trans" >
+    <actuator name="RC-W-base-joint_motor" />
+    <joint name="RC-W-base-joint" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="RC-W-base-joint">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="RC-W-linear-joint" type="fixed">
+    <parent link="RC-W-base_LINK"/>
+    <child  link="RC_W_LINK"/>
+    <origin xyz="0 0 0" rpy="3.14159 3.67518e-15 3.14159 "/>
+    <axis   xyz="0 0 1"/>
+    <limit lower="0.240125" upper="0.331606" effort="3000" velocity="0.48" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="RC-W-linear-joint_trans" >
+    <actuator name="RC-W-linear-joint_motor" />
+    <joint name="RC-W-linear-joint" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="RC-W-linear-joint">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="R_SHOULDER_P" type="revolute">
+    <parent link="CHEST_P_LINK"/>
+    <child  link="R_SHOULDER_P_LINK"/>
+    <origin xyz="0 -0.264 0.36" rpy="0 -0 0 "/>
+    <axis   xyz="0 1 0"/>
+    <limit lower="-3.14159" upper="3.14159" effort="53.526" velocity="6.233" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="R_SHOULDER_P_trans" >
+    <actuator name="R_SHOULDER_P_motor" />
+    <joint name="R_SHOULDER_P" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="R_SHOULDER_P">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="R_SHOULDER_R" type="revolute">
+    <parent link="R_SHOULDER_P_LINK"/>
+    <child  link="R_SHOULDER_R_LINK"/>
+    <origin xyz="0 0 0" rpy="0 -0 0 "/>
+    <axis   xyz="1 0 0"/>
+    <limit lower="-1.74533" upper="0" effort="55.755" velocity="9" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="R_SHOULDER_R_trans" >
+    <actuator name="R_SHOULDER_R_motor" />
+    <joint name="R_SHOULDER_R" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="R_SHOULDER_R">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="R_SHOULDER_Y" type="revolute">
+    <parent link="R_SHOULDER_R_LINK"/>
+    <child  link="R_SHOULDER_Y_LINK"/>
+    <origin xyz="0 0 0" rpy="0 -0 0 "/>
+    <axis   xyz="0 0 1"/>
+    <limit lower="-3.14159" upper="3.14159" effort="55.755" velocity="9" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="R_SHOULDER_Y_trans" >
+    <actuator name="R_SHOULDER_Y_motor" />
+    <joint name="R_SHOULDER_Y" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="R_SHOULDER_Y">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="RC-E-base-joint" type="fixed">
+    <parent link="R_SHOULDER_Y_LINK"/>
+    <child  link="RC-E-base_LINK"/>
+    <origin xyz="-0.05 0 -0.05" rpy="0 -0.0996583 0 "/>
+    <axis   xyz="0 1 0"/>
+    <limit lower="0" upper="0" effort="100" velocity="0.5" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="RC-E-base-joint_trans" >
+    <actuator name="RC-E-base-joint_motor" />
+    <joint name="RC-E-base-joint" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="RC-E-base-joint">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="RC-E-linear-joint" type="fixed">
+    <parent link="RC-E-base_LINK"/>
+    <child  link="RC_E_LINK"/>
+    <origin xyz="0 0 0" rpy="3.14159 3.67518e-15 3.14159 "/>
+    <axis   xyz="0 0 1"/>
+    <limit lower="0.16677" upper="0.27246" effort="3000" velocity="0.48" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="RC-E-linear-joint_trans" >
+    <actuator name="RC-E-linear-joint_motor" />
+    <joint name="RC-E-linear-joint" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="RC-E-linear-joint">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="R_ELBOW_P" type="revolute">
+    <parent link="R_SHOULDER_Y_LINK"/>
+    <child  link="R_ELBOW_P_LINK"/>
+    <origin xyz="0 0 -0.33" rpy="0 -0 0 "/>
+    <axis   xyz="0 1 0"/>
+    <limit lower="-2.26893" upper="0" effort="74.148" velocity="4.499" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="R_ELBOW_P_trans" >
+    <actuator name="R_ELBOW_P_motor" />
+    <joint name="R_ELBOW_P" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="R_ELBOW_P">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="R_ELBOW_Y" type="revolute">
+    <parent link="R_ELBOW_P_LINK"/>
+    <child  link="R_ELBOW_Y_LINK"/>
+    <origin xyz="0 0 -0.3" rpy="0 -0 0 "/>
+    <axis   xyz="0 0 1"/>
+    <limit lower="-2.00713" upper="2.00713" effort="37.086" velocity="4.499" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="R_ELBOW_Y_trans" >
+    <actuator name="R_ELBOW_Y_motor" />
+    <joint name="R_ELBOW_Y" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="R_ELBOW_Y">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="R_WRIST_P" type="revolute">
+    <parent link="R_ELBOW_Y_LINK"/>
+    <child  link="R_WRIST_P_LINK"/>
+    <origin xyz="0 0 0" rpy="0 -0 0 "/>
+    <axis   xyz="0 1 0"/>
+    <limit lower="-1.5708" upper="0.959931" effort="47.79" velocity="6.981" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="R_WRIST_P_trans" >
+    <actuator name="R_WRIST_P_motor" />
+    <joint name="R_WRIST_P" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="R_WRIST_P">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="R_WRIST_Y" type="revolute">
+    <parent link="R_WRIST_P_LINK"/>
+    <child  link="R_WRIST_Y_LINK"/>
+    <origin xyz="0 0 -0.04" rpy="0 -0 0 "/>
+    <axis   xyz="0 0 1"/>
+    <limit lower="-3.14159" upper="3.14159" effort="47.79" velocity="6.981" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="R_WRIST_Y_trans" >
+    <actuator name="R_WRIST_Y_motor" />
+    <joint name="R_WRIST_Y" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="R_WRIST_Y">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="R_HAND" type="revolute">
+    <parent link="R_WRIST_Y_LINK"/>
+    <child  link="R_HAND_LINK"/>
+    <origin xyz="0 -0.02 -0.0834" rpy="0 -0 0 "/>
+    <axis   xyz="1 0 0"/>
+    <limit lower="-1.0472" upper="2.16421" effort="3000" velocity="9" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="R_HAND_trans" >
+    <actuator name="R_HAND_motor" />
+    <joint name="R_HAND" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="R_HAND">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <!-- <joint name="r-one-finger" type="fixed">
+    <parent link="R_WRIST_Y_LINK"/>
+    <child  link="r-one-finger-link"/>
+    <origin xyz="0 0.02 -0.1" rpy="0 -0 0 "/>
+    <axis   xyz="0 0 1"/>
+    <limit lower="0" upper="0" effort="100" velocity="0.5" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="r-one-finger_trans" >
+    <actuator name="r-one-finger_motor" />
+    <joint name="r-one-finger" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="r-one-finger">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo> -->
+  <joint name="L_CROTCH_Y" type="revolute">
+    <parent link="BODY"/>
+    <child  link="L_CROTCH_Y_LINK"/>
+    <origin xyz="0 0.105 0" rpy="0 -0 0 "/>
+    <axis   xyz="0 0 1"/>
+    <limit lower="-3.14159" upper="3.14159" effort="37.46" velocity="4.948" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="L_CROTCH_Y_trans" >
+    <actuator name="L_CROTCH_Y_motor" />
+    <joint name="L_CROTCH_Y" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="L_CROTCH_Y">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="L_CROTCH_R" type="revolute">
+    <parent link="L_CROTCH_Y_LINK"/>
+    <child  link="L_CROTCH_R_LINK"/>
+    <origin xyz="0 0 -0.06" rpy="0 -0 0 "/>
+    <axis   xyz="1 0 0"/>
+    <limit lower="-0.523599" upper="0.523599" effort="104.269" velocity="6.399" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="L_CROTCH_R_trans" >
+    <actuator name="L_CROTCH_R_motor" />
+    <joint name="L_CROTCH_R" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="L_CROTCH_R">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="L_CROTCH_P" type="revolute">
+    <parent link="L_CROTCH_R_LINK"/>
+    <child  link="L_CROTCH_P_LINK"/>
+    <origin xyz="0 0 0" rpy="0 -0 0 "/>
+    <axis   xyz="0 1 0"/>
+    <limit lower="-1.91986" upper="0.523599" effort="104.269" velocity="6.399" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="L_CROTCH_P_trans" >
+    <actuator name="L_CROTCH_P_motor" />
+    <joint name="L_CROTCH_P" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="L_CROTCH_P">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="LC-CI-base-joint" type="fixed">
+    <parent link="L_CROTCH_P_LINK"/>
+    <child  link="LC-CI-base_LINK"/>
+    <origin xyz="0 -0.04 -0.35" rpy="3.14159 0.231183 3.14159 "/>
+    <axis   xyz="0 1 0"/>
+    <limit lower="0" upper="0" effort="100" velocity="0.5" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="LC-CI-base-joint_trans" >
+    <actuator name="LC-CI-base-joint_motor" />
+    <joint name="LC-CI-base-joint" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="LC-CI-base-joint">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="LC-CI-linear-joint" type="fixed">
+    <parent link="LC-CI-base_LINK"/>
+    <child  link="LC_CI_LINK"/>
+    <origin xyz="0 0 0" rpy="3.14159 3.67518e-15 3.14159 "/>
+    <axis   xyz="0 0 1"/>
+    <limit lower="0.24157" upper="0.354" effort="3000" velocity="0.48" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="LC-CI-linear-joint_trans" >
+    <actuator name="LC-CI-linear-joint_motor" />
+    <joint name="LC-CI-linear-joint" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="LC-CI-linear-joint">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="LC-CI-hinge-joint" type="fixed">
+    <parent link="L_CROTCH_P_LINK"/>
+    <child  link="LC-CI-hinge_LINK"/>
+    <origin xyz="0 0.04 -0.05" rpy="0 -0.253073 0 "/>
+    <axis   xyz="0 1 0"/>
+    <limit lower="0" upper="0" effort="100" velocity="0.5" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="LC-CI-hinge-joint_trans" >
+    <actuator name="LC-CI-hinge-joint_motor" />
+    <joint name="LC-CI-hinge-joint" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="LC-CI-hinge-joint">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="LC-CO-base-joint" type="fixed">
+    <parent link="L_CROTCH_P_LINK"/>
+    <child  link="LC-CO-base_LINK"/>
+    <origin xyz="0 0.04 -0.35" rpy="3.14159 0.231183 3.14159 "/>
+    <axis   xyz="0 1 0"/>
+    <limit lower="0" upper="0" effort="100" velocity="0.5" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="LC-CO-base-joint_trans" >
+    <actuator name="LC-CO-base-joint_motor" />
+    <joint name="LC-CO-base-joint" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="LC-CO-base-joint">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="LC-CO-linear-joint" type="fixed">
+    <parent link="LC-CO-base_LINK"/>
+    <child  link="LC_CO_LINK"/>
+    <origin xyz="0 0 0" rpy="3.14159 3.67518e-15 3.14159 "/>
+    <axis   xyz="0 0 1"/>
+    <limit lower="0.24157" upper="0.354" effort="3000" velocity="0.48" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="LC-CO-linear-joint_trans" >
+    <actuator name="LC-CO-linear-joint_motor" />
+    <joint name="LC-CO-linear-joint" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="LC-CO-linear-joint">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="LC-CO-hinge-joint" type="fixed">
+    <parent link="L_CROTCH_P_LINK"/>
+    <child  link="LC-CO-hinge_LINK"/>
+    <origin xyz="0 -0.04 -0.05" rpy="0 -0.253073 0 "/>
+    <axis   xyz="0 1 0"/>
+    <limit lower="0" upper="0" effort="100" velocity="0.5" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="LC-CO-hinge-joint_trans" >
+    <actuator name="LC-CO-hinge-joint_motor" />
+    <joint name="LC-CO-hinge-joint" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="LC-CO-hinge-joint">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="LC-K-base-joint" type="fixed">
+    <parent link="L_CROTCH_P_LINK"/>
+    <child  link="LC-K-base_LINK"/>
+    <origin xyz="0.04 0 -0.11" rpy="0 -0 0 "/>
+    <axis   xyz="0 1 0"/>
+    <limit lower="0" upper="0" effort="100" velocity="0.5" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="LC-K-base-joint_trans" >
+    <actuator name="LC-K-base-joint_motor" />
+    <joint name="LC-K-base-joint" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="LC-K-base-joint">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="LC-K-linear-joint" type="fixed">
+    <parent link="LC-K-base_LINK"/>
+    <child  link="LC_K_LINK"/>
+    <origin xyz="0 0 0" rpy="3.14159 3.67518e-15 3.14159 "/>
+    <axis   xyz="0 0 1"/>
+    <limit lower="0.190263" upper="0.342056" effort="3000" velocity="0.48" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="LC-K-linear-joint_trans" >
+    <actuator name="LC-K-linear-joint_motor" />
+    <joint name="LC-K-linear-joint" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="LC-K-linear-joint">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="L_KNEE_P" type="revolute">
+    <parent link="L_CROTCH_P_LINK"/>
+    <child  link="L_KNEE_P_LINK"/>
+    <origin xyz="0 0 -0.415" rpy="0 -0 0 "/>
+    <axis   xyz="0 1 0"/>
+    <limit lower="0" upper="2.44346" effort="104.269" velocity="3.49" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="L_KNEE_P_trans" >
+    <actuator name="L_KNEE_P_motor" />
+    <joint name="L_KNEE_P" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="L_KNEE_P">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="LC-AI-base-joint" type="fixed">
+    <parent link="L_KNEE_P_LINK"/>
+    <child  link="LC-AI-base_LINK"/>
+    <origin xyz="0 -0.04 -0.08" rpy="0 0.17994 0 "/>
+    <axis   xyz="0 1 0"/>
+    <limit lower="0" upper="0" effort="100" velocity="0.5" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="LC-AI-base-joint_trans" >
+    <actuator name="LC-AI-base-joint_motor" />
+    <joint name="LC-AI-base-joint" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="LC-AI-base-joint">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="LC-AI-linear-joint" type="fixed">
+    <parent link="LC-AI-base_LINK"/>
+    <child  link="LC_AI_LINK"/>
+    <origin xyz="0 0 0" rpy="3.14159 3.67518e-15 3.14159 "/>
+    <axis   xyz="0 0 1"/>
+    <limit lower="0.240041" upper="0.354" effort="3000" velocity="0.48" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="LC-AI-linear-joint_trans" >
+    <actuator name="LC-AI-linear-joint_motor" />
+    <joint name="LC-AI-linear-joint" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="LC-AI-linear-joint">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="LC-AI-hinge-joint" type="fixed">
+    <parent link="L_KNEE_P_LINK"/>
+    <child  link="LC-AI-hinge_LINK"/>
+    <origin xyz="0 -0.04 -0.4" rpy="0 0.253073 0 "/>
+    <axis   xyz="0 1 0"/>
+    <limit lower="0" upper="0" effort="100" velocity="0.5" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="LC-AI-hinge-joint_trans" >
+    <actuator name="LC-AI-hinge-joint_motor" />
+    <joint name="LC-AI-hinge-joint" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="LC-AI-hinge-joint">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="LC-AO-base-joint" type="fixed">
+    <parent link="L_KNEE_P_LINK"/>
+    <child  link="LC-AO-base_LINK"/>
+    <origin xyz="0 0.04 -0.08" rpy="0 0.17994 0 "/>
+    <axis   xyz="0 1 0"/>
+    <limit lower="0" upper="0" effort="100" velocity="0.5" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="LC-AO-base-joint_trans" >
+    <actuator name="LC-AO-base-joint_motor" />
+    <joint name="LC-AO-base-joint" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="LC-AO-base-joint">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="LC-AO-linear-joint" type="fixed">
+    <parent link="LC-AO-base_LINK"/>
+    <child  link="LC_AO_LINK"/>
+    <origin xyz="0 0 0" rpy="3.14159 3.67518e-15 3.14159 "/>
+    <axis   xyz="0 0 1"/>
+    <limit lower="0.240041" upper="0.354" effort="3000" velocity="0.48" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="LC-AO-linear-joint_trans" >
+    <actuator name="LC-AO-linear-joint_motor" />
+    <joint name="LC-AO-linear-joint" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="LC-AO-linear-joint">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="LC-AO-hinge-joint" type="fixed">
+    <parent link="L_KNEE_P_LINK"/>
+    <child  link="LC-AO-hinge_LINK"/>
+    <origin xyz="0 0.04 -0.4" rpy="0 0.253073 0 "/>
+    <axis   xyz="0 1 0"/>
+    <limit lower="0" upper="0" effort="100" velocity="0.5" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="LC-AO-hinge-joint_trans" >
+    <actuator name="LC-AO-hinge-joint_motor" />
+    <joint name="LC-AO-hinge-joint" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="LC-AO-hinge-joint">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="L_ANKLE_R" type="revolute">
+    <parent link="L_KNEE_P_LINK"/>
+    <child  link="L_ANKLE_R_LINK"/>
+    <origin xyz="0 0 -0.415" rpy="0 -0 0 "/>
+    <axis   xyz="1 0 0"/>
+    <limit lower="-0.523599" upper="0.523599" effort="104.269" velocity="6.399" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="L_ANKLE_R_trans" >
+    <actuator name="L_ANKLE_R_motor" />
+    <joint name="L_ANKLE_R" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="L_ANKLE_R">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="L_ANKLE_P" type="revolute">
+    <parent link="L_ANKLE_R_LINK"/>
+    <child  link="L_ANKLE_P_LINK"/>
+    <origin xyz="0 0 0" rpy="0 -0 0 "/>
+    <axis   xyz="0 1 0"/>
+    <limit lower="-1.74533" upper="0.698132" effort="104.269" velocity="6.399" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="L_ANKLE_P_trans" >
+    <actuator name="L_ANKLE_P_motor" />
+    <joint name="L_ANKLE_P" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="L_ANKLE_P">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="R_CROTCH_Y" type="revolute">
+    <parent link="BODY"/>
+    <child  link="R_CROTCH_Y_LINK"/>
+    <origin xyz="0 -0.105 0" rpy="0 -0 0 "/>
+    <axis   xyz="0 0 1"/>
+    <limit lower="-3.14159" upper="3.14159" effort="37.46" velocity="4.948" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="R_CROTCH_Y_trans" >
+    <actuator name="R_CROTCH_Y_motor" />
+    <joint name="R_CROTCH_Y" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="R_CROTCH_Y">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="R_CROTCH_R" type="revolute">
+    <parent link="R_CROTCH_Y_LINK"/>
+    <child  link="R_CROTCH_R_LINK"/>
+    <origin xyz="0 0 -0.06" rpy="0 -0 0 "/>
+    <axis   xyz="1 0 0"/>
+    <limit lower="-0.523599" upper="0.523599" effort="104.269" velocity="6.399" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="R_CROTCH_R_trans" >
+    <actuator name="R_CROTCH_R_motor" />
+    <joint name="R_CROTCH_R" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="R_CROTCH_R">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="R_CROTCH_P" type="revolute">
+    <parent link="R_CROTCH_R_LINK"/>
+    <child  link="R_CROTCH_P_LINK"/>
+    <origin xyz="0 0 0" rpy="0 -0 0 "/>
+    <axis   xyz="0 1 0"/>
+    <limit lower="-1.91986" upper="0.523599" effort="104.269" velocity="6.399" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="R_CROTCH_P_trans" >
+    <actuator name="R_CROTCH_P_motor" />
+    <joint name="R_CROTCH_P" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="R_CROTCH_P">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="RC-CI-base-joint" type="fixed">
+    <parent link="R_CROTCH_P_LINK"/>
+    <child  link="RC-CI-base_LINK"/>
+    <origin xyz="0 0.04 -0.35" rpy="3.14159 0.231183 3.14159 "/>
+    <axis   xyz="0 1 0"/>
+    <limit lower="0" upper="0" effort="100" velocity="0.5" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="RC-CI-base-joint_trans" >
+    <actuator name="RC-CI-base-joint_motor" />
+    <joint name="RC-CI-base-joint" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="RC-CI-base-joint">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="RC-CI-linear-joint" type="fixed">
+    <parent link="RC-CI-base_LINK"/>
+    <child  link="RC_CI_LINK"/>
+    <origin xyz="0 0 0" rpy="3.14159 3.67518e-15 3.14159 "/>
+    <axis   xyz="0 0 1"/>
+    <limit lower="0.24157" upper="0.354" effort="3000" velocity="0.48" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="RC-CI-linear-joint_trans" >
+    <actuator name="RC-CI-linear-joint_motor" />
+    <joint name="RC-CI-linear-joint" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="RC-CI-linear-joint">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="RC-CI-hinge-joint" type="fixed">
+    <parent link="R_CROTCH_P_LINK"/>
+    <child  link="RC-CI-hinge_LINK"/>
+    <origin xyz="0 0.04 -0.05" rpy="0 -0.253073 0 "/>
+    <axis   xyz="0 1 0"/>
+    <limit lower="0" upper="0" effort="100" velocity="0.5" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="RC-CI-hinge-joint_trans" >
+    <actuator name="RC-CI-hinge-joint_motor" />
+    <joint name="RC-CI-hinge-joint" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="RC-CI-hinge-joint">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="RC-CO-base-joint" type="fixed">
+    <parent link="R_CROTCH_P_LINK"/>
+    <child  link="RC-CO-base_LINK"/>
+    <origin xyz="0 -0.04 -0.35" rpy="3.14159 0.231183 3.14159 "/>
+    <axis   xyz="0 1 0"/>
+    <limit lower="0" upper="0" effort="100" velocity="0.5" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="RC-CO-base-joint_trans" >
+    <actuator name="RC-CO-base-joint_motor" />
+    <joint name="RC-CO-base-joint" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="RC-CO-base-joint">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="RC-CO-linear-joint" type="fixed">
+    <parent link="RC-CO-base_LINK"/>
+    <child  link="RC_CO_LINK"/>
+    <origin xyz="0 0 0" rpy="3.14159 3.67518e-15 3.14159 "/>
+    <axis   xyz="0 0 1"/>
+    <limit lower="0.24157" upper="0.354" effort="3000" velocity="0.48" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="RC-CO-linear-joint_trans" >
+    <actuator name="RC-CO-linear-joint_motor" />
+    <joint name="RC-CO-linear-joint" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="RC-CO-linear-joint">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="RC-CO-hinge-joint" type="fixed">
+    <parent link="R_CROTCH_P_LINK"/>
+    <child  link="RC-CO-hinge_LINK"/>
+    <origin xyz="0 -0.04 -0.05" rpy="0 -0.253073 0 "/>
+    <axis   xyz="0 1 0"/>
+    <limit lower="0" upper="0" effort="100" velocity="0.5" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="RC-CO-hinge-joint_trans" >
+    <actuator name="RC-CO-hinge-joint_motor" />
+    <joint name="RC-CO-hinge-joint" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="RC-CO-hinge-joint">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="RC-K-base-joint" type="fixed">
+    <parent link="R_CROTCH_P_LINK"/>
+    <child  link="RC-K-base_LINK"/>
+    <origin xyz="0.04 0 -0.11" rpy="0 -0 0 "/>
+    <axis   xyz="0 1 0"/>
+    <limit lower="0" upper="0" effort="100" velocity="0.5" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="RC-K-base-joint_trans" >
+    <actuator name="RC-K-base-joint_motor" />
+    <joint name="RC-K-base-joint" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="RC-K-base-joint">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="RC-K-linear-joint" type="fixed">
+    <parent link="RC-K-base_LINK"/>
+    <child  link="RC_K_LINK"/>
+    <origin xyz="0 0 0" rpy="3.14159 3.67518e-15 3.14159 "/>
+    <axis   xyz="0 0 1"/>
+    <limit lower="0.190263" upper="0.342056" effort="3000" velocity="0.48" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="RC-K-linear-joint_trans" >
+    <actuator name="RC-K-linear-joint_motor" />
+    <joint name="RC-K-linear-joint" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="RC-K-linear-joint">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="R_KNEE_P" type="revolute">
+    <parent link="R_CROTCH_P_LINK"/>
+    <child  link="R_KNEE_P_LINK"/>
+    <origin xyz="0 0 -0.415" rpy="0 -0 0 "/>
+    <axis   xyz="0 1 0"/>
+    <limit lower="0" upper="2.44346" effort="104.269" velocity="3.49" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="R_KNEE_P_trans" >
+    <actuator name="R_KNEE_P_motor" />
+    <joint name="R_KNEE_P" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="R_KNEE_P">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="RC-AI-base-joint" type="fixed">
+    <parent link="R_KNEE_P_LINK"/>
+    <child  link="RC-AI-base_LINK"/>
+    <origin xyz="0 0.04 -0.08" rpy="0 0.17994 0 "/>
+    <axis   xyz="0 1 0"/>
+    <limit lower="0" upper="0" effort="100" velocity="0.5" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="RC-AI-base-joint_trans" >
+    <actuator name="RC-AI-base-joint_motor" />
+    <joint name="RC-AI-base-joint" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="RC-AI-base-joint">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="RC-AI-linear-joint" type="fixed">
+    <parent link="RC-AI-base_LINK"/>
+    <child  link="RC_AI_LINK"/>
+    <origin xyz="0 0 0" rpy="3.14159 3.67518e-15 3.14159 "/>
+    <axis   xyz="0 0 1"/>
+    <limit lower="0.240041" upper="0.354" effort="3000" velocity="0.48" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="RC-AI-linear-joint_trans" >
+    <actuator name="RC-AI-linear-joint_motor" />
+    <joint name="RC-AI-linear-joint" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="RC-AI-linear-joint">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="RC-AI-hinge-joint" type="fixed">
+    <parent link="R_KNEE_P_LINK"/>
+    <child  link="RC-AI-hinge_LINK"/>
+    <origin xyz="0 0.04 -0.4" rpy="0 0.253073 0 "/>
+    <axis   xyz="0 1 0"/>
+    <limit lower="0" upper="0" effort="100" velocity="0.5" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="RC-AI-hinge-joint_trans" >
+    <actuator name="RC-AI-hinge-joint_motor" />
+    <joint name="RC-AI-hinge-joint" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="RC-AI-hinge-joint">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="RC-AO-base-joint" type="fixed">
+    <parent link="R_KNEE_P_LINK"/>
+    <child  link="RC-AO-base_LINK"/>
+    <origin xyz="0 -0.04 -0.08" rpy="0 0.17994 0 "/>
+    <axis   xyz="0 1 0"/>
+    <limit lower="0" upper="0" effort="100" velocity="0.5" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="RC-AO-base-joint_trans" >
+    <actuator name="RC-AO-base-joint_motor" />
+    <joint name="RC-AO-base-joint" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="RC-AO-base-joint">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="RC-AO-linear-joint" type="fixed">
+    <parent link="RC-AO-base_LINK"/>
+    <child  link="RC_AO_LINK"/>
+    <origin xyz="0 0 0" rpy="3.14159 3.67518e-15 3.14159 "/>
+    <axis   xyz="0 0 1"/>
+    <limit lower="0.240041" upper="0.354" effort="3000" velocity="0.48" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="RC-AO-linear-joint_trans" >
+    <actuator name="RC-AO-linear-joint_motor" />
+    <joint name="RC-AO-linear-joint" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="RC-AO-linear-joint">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="RC-AO-hinge-joint" type="fixed">
+    <parent link="R_KNEE_P_LINK"/>
+    <child  link="RC-AO-hinge_LINK"/>
+    <origin xyz="0 -0.04 -0.4" rpy="0 0.253073 0 "/>
+    <axis   xyz="0 1 0"/>
+    <limit lower="0" upper="0" effort="100" velocity="0.5" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="RC-AO-hinge-joint_trans" >
+    <actuator name="RC-AO-hinge-joint_motor" />
+    <joint name="RC-AO-hinge-joint" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="RC-AO-hinge-joint">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="R_ANKLE_R" type="revolute">
+    <parent link="R_KNEE_P_LINK"/>
+    <child  link="R_ANKLE_R_LINK"/>
+    <origin xyz="0 0 -0.415" rpy="0 -0 0 "/>
+    <axis   xyz="1 0 0"/>
+    <limit lower="-0.523599" upper="0.523599" effort="104.269" velocity="6.399" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="R_ANKLE_R_trans" >
+    <actuator name="R_ANKLE_R_motor" />
+    <joint name="R_ANKLE_R" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="R_ANKLE_R">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+  <joint name="R_ANKLE_P" type="revolute">
+    <parent link="R_ANKLE_R_LINK"/>
+    <child  link="R_ANKLE_P_LINK"/>
+    <origin xyz="0 0 0" rpy="0 -0 0 "/>
+    <axis   xyz="0 1 0"/>
+    <limit lower="-1.74533" upper="0.698132" effort="104.269" velocity="6.399" />
+    <dynamics damping="0.2" friction="0" />
+  </joint>
+  <transmission type="pr2_mechanism_model/SimpleTransmission" name="R_ANKLE_P_trans" >
+    <actuator name="R_ANKLE_P_motor" />
+    <joint name="R_ANKLE_P" />
+    <mechanicalReduction>1</mechanicalReduction>
+  </transmission>
+  <gazebo reference="R_ANKLE_P">
+    <cfmDamping>0.4</cfmDamping>
+  </gazebo>
+</robot>
