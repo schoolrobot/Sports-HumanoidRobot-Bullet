@@ -1,4 +1,4 @@
-# Reinforcement learning MuJoCo environment to train stability and sports skills in a humanoid robot
+# Pybullet Reinforcement learning environment to train stability and sports skills in a humanoid robot
 ロボットのバスケ
 
 ### Robot and Ball
