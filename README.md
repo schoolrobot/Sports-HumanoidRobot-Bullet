@@ -3,7 +3,7 @@
 ロボットのバスケ
 
 ## Basketball Dribble Environment
-![alt text](https://github.com/etorobot/DRL-Sports-HumanoidRobot-Bullet/blob/main/pictures/pose_dribble_1.png?raw=true)
+![Dribbling a basketball](https://github.com/etorobot/DRL-Sports-HumanoidRobot-Bullet/blob/main/pictures/pose_dribble_1.png?raw=true)
 
 ## Volleyball Env
-![alt text](https://github.com/etorobot/DRL-Sports-HumanoidRobot-Bullet/blob/main/pictures/SPK_Pose_1.png?raw=true)
+![Robot in Spiking Motion](https://github.com/etorobot/DRL-Sports-HumanoidRobot-Bullet/blob/main/pictures/SPK%20Pose%201.png?raw=true)
