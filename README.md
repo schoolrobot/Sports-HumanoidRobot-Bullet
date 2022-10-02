@@ -1,9 +1,8 @@
-# dribble
-
+# Reinforcement learning MuJoCo environment to train stability and sports skills in a humanoid robot
 ロボットのバスケ
 
-## Basketball Dribble Environment
-![Dribbling a basketball](https://github.com/etorobot/DRL-Sports-HumanoidRobot-Bullet/blob/main/pictures/pose_dribble_1.png)
+### Robot and Ball
+![Ball and robot](https://github.com/etorobot/DRL-Sports-HumanoidRobot-Bullet/blob/main/pictures/Pybullet_Split.png)
 
-## Volleyball Env
-![Robot in Spiking Motion](https://github.com/etorobot/DRL-Sports-HumanoidRobot-Bullet/blob/main/pictures/SPK%20Pose%201.png)
+### Fall-Prevention Program
+![Robot in Split](https://github.com/etorobot/DRL-Sports-HumanoidRobot-Bullet/blob/main/pictures/Pybullet_Split.png)
